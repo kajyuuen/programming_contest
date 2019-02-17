@@ -1,4 +1,4 @@
-# 問題
+# programming_contest
 
 - `/lib`: ライブラリ
 - `/problems`: 問題の分類と解答
