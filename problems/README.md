@@ -2,14 +2,26 @@
 
 - マス目，迷路
     - https://atcoder.jp/contests/abc075/tasks/abc075_b
-    - [abc075_b.py](./abc075_b.py)
+        - [abc075_b.py](./abc075_b.py)
 - 最大公約数
     - https://atcoder.jp/contests/abc118/tasks/abc118_c
 - 二分木探索
     - https://atcoder.jp/contests/abc077/tasks/arc084_a
-    - [arc084_a](./arc084_a)
+        - [arc084_a](./arc084_a.py)
 - 全探索
     - 図形
         - ブロック
         - https://atcoder.jp/contests/abc062/tasks/arc074_a
-        - [arc074_a](./arc074_a)
+            - [arc074_a](./arc074_a.py)
+- 中央値
+    - https://atcoder.jp/contests/abc094/tasks/arc095_a
+        - [arc095_a](./arc095_a.py)
+- 数直線
+    - https://atcoder.jp/contests/abc117/tasks/abc117_c
+- 1000000007で割ったあまり
+    - https://atcoder.jp/contests/abc065/tasks/arc076_a
+        - [arc076_a](./arc076_a.py)
+- グラフ
+    - 無向グラフ
+        - https://atcoder.jp/contests/abc075/tasks/abc075_c
+            - DFS: [abc075_c_0.py](./abc075_c_0.py)
