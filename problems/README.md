@@ -1,5 +1,7 @@
 # 問題
 
+- 経路(組み合わせ)
+    - https://atcoder.jp/contests/abc034/tasks/abc034_c
 - マス目，迷路
     - https://atcoder.jp/contests/abc075/tasks/abc075_b
         - [abc075_b.py](./abc075_b.py)
@@ -9,6 +11,9 @@
     - https://atcoder.jp/contests/abc077/tasks/arc084_a
         - [arc084_a](./arc084_a.py)
 - 全探索
+    - https://atcoder.jp/contests/abc119/tasks/abc119_c
+        - DFSによる解答: [abc119_c](./abc119_c.py)
+    - https://atcoder.jp/contests/abc045/tasks/arc061_a
     - 図形
         - ブロック
         - https://atcoder.jp/contests/abc062/tasks/arc074_a
@@ -16,12 +21,29 @@
 - 中央値
     - https://atcoder.jp/contests/abc094/tasks/arc095_a
         - [arc095_a](./arc095_a.py)
+    - https://atcoder.jp/contests/abc102/tasks/arc100_a
 - 数直線
     - https://atcoder.jp/contests/abc117/tasks/abc117_c
+    - https://atcoder.jp/contests/abc107/tasks/arc101_a
+        - N-K+1通り全探索
 - 1000000007で割ったあまり
     - https://atcoder.jp/contests/abc065/tasks/arc076_a
         - [arc076_a](./arc076_a.py)
+    - 割り算: https://atcoder.jp/contests/abc034/tasks/abc034_c
+- しゃくとり法
+    - https://atcoder.jp/contests/abc038/tasks/abc038_c
 - グラフ
     - 無向グラフ
         - https://atcoder.jp/contests/abc075/tasks/abc075_c
             - DFS: [abc075_c_0.py](./abc075_c_0.py)
+        - https://atcoder.jp/contests/abc054/tasks/abc054_c
+            - DFS: [abc054_c.py](./abc054_c.py)
+- いもす法
+    - https://atcoder.jp/contests/abc035/tasks/abc035_c
+    - https://atcoder.jp/contests/abc014/tasks/abc014_3
+- mod
+    - https://atcoder.jp/contests/abc103/tasks/abc103_c
+- その他
+    - https://atcoder.jp/contests/abc101/tasks/arc099_a
+    - sortするだけ: https://atcoder.jp/contests/abc121/tasks/abc121_c
+    - 隣り合う，数え上げ: https://atcoder.jp/contests/abc120/tasks/abc120_c

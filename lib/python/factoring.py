@@ -8,8 +8,6 @@ class Prime:
         """
         prime test (hybrid)
 
-        see also: https://qiita.com/gushwell/items/ff9ed83ba55350aaa369
-
         :param n:
         :return: boolean
         """
