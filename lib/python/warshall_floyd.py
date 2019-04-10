@@ -14,14 +14,8 @@ def warshall_floyd(G):
     return G
 
 if __name__ == "__main__":
-    # https://atcoder.jp/contests/abc007/tasks/abc007_3
+    # https://atcoder.jp/contests/abc016/tasks/abc016_3
     N, M = s_inpl()
-
-    for _ in range(M):
-        a, b = s_inpl()
-        a, b = a-1, b-1
-        G[a][b] = 1
-        G[b][a] = 1
 
     # 隣接行列 G, 存在しない辺はINF
     G = [[INF] * N for _ in range(N)]
@@ -29,6 +23,12 @@ if __name__ == "__main__":
     # 自身に向かうコストは0
     for i in range(N):
         G[i][i] = 0
+
+    for _ in range(M):
+        a, b = s_inpl()
+        a, b = a-1, b-1
+        G[a][b] = 1
+        G[b][a] = 1
 
     G = warshall_floyd(G)
     for row in G:
