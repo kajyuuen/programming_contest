@@ -11,7 +11,8 @@
 - 幅優先探索 (Breadth first search)
     - [graph_bfs.py](./graph_bfs.py)
     - [maze_dfs.py](./maze_dfs.py)
-- 1000000007で割ったときのあまり
+- MOD計算
+    - [mod.py](./mod.py)
 - [TODO] Union find
 - [TODO] ワーシャルフロイド法
 - [TODO] bit 全探索
