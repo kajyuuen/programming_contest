@@ -15,4 +15,3 @@
     - [mod.py](./mod.py)
 - [TODO] Union find
 - [TODO] ワーシャルフロイド法
-- [TODO] bit 全探索
