@@ -1,16 +1,25 @@
 # 問題
 
-- 経路(組み合わせ)
+- 動的計画法
+    - https://atcoder.jp/contests/abc011/tasks/abc011_3
+    - https://atcoder.jp/contests/abc099/tasks/abc099_c
+- 組み合わせ
     - https://atcoder.jp/contests/abc034/tasks/abc034_c
+    - https://atcoder.jp/contests/abc028/tasks/abc028_c
 - マス目，迷路
     - https://atcoder.jp/contests/abc075/tasks/abc075_b
         - [abc075_b.py](./abc075_b.py)
 - 最大公約数
     - https://atcoder.jp/contests/abc118/tasks/abc118_c
 - 二分木探索
+    - https://atcoder.jp/contests/abc030/tasks/abc030_c
     - https://atcoder.jp/contests/abc077/tasks/arc084_a
         - [arc084_a](./arc084_a.py)
 - 全探索
+    - https://atcoder.jp/contests/abc080/tasks/abc080_c
+        - bit全探索: [abc119_c](./abc080_c.py)
+    - Nの大きさに注目: https://atcoder.jp/contests/abc043/tasks/arc059_a
+    - https://atcoder.jp/contests/abc015/tasks/abc015_3
     - https://atcoder.jp/contests/abc119/tasks/abc119_c
         - DFSによる解答: [abc119_c](./abc119_c.py)
     - https://atcoder.jp/contests/abc045/tasks/arc061_a
@@ -31,6 +40,8 @@
         - [arc076_a](./arc076_a.py)
     - 割り算: https://atcoder.jp/contests/abc034/tasks/abc034_c
 - しゃくとり法
+    - https://atcoder.jp/contests/abc032/tasks/abc032_c
+        - [abc032_c.py](./abc032_c.py)
     - https://atcoder.jp/contests/abc038/tasks/abc038_c
 - グラフ
     - 無向グラフ
@@ -43,7 +54,17 @@
     - https://atcoder.jp/contests/abc014/tasks/abc014_3
 - mod
     - https://atcoder.jp/contests/abc103/tasks/abc103_c
+- 図形問題
+    - 三角形の公式 (0, 0), (a, b), (c, d): |a*d-b*c|/2
+        - https://atcoder.jp/contests/abc002/tasks/abc002_3
 - その他
+    - シミュレーション: https://atcoder.jp/contests/abc027/tasks/abc027_c
+    - 確率: https://atcoder.jp/contests/abc078/tasks/arc085_a
+    - リバーシ: https://atcoder.jp/contests/abc047/tasks/arc063_a
+    - https://atcoder.jp/contests/abc039/tasks/abc039_c
+    - https://atcoder.jp/contests/abc050/tasks/arc066_a
+    - https://atcoder.jp/contests/abc048/tasks/arc064_a
+    - https://atcoder.jp/contests/abc019/tasks/abc019_3
     - https://atcoder.jp/contests/abc101/tasks/arc099_a
     - sortするだけ: https://atcoder.jp/contests/abc121/tasks/abc121_c
     - 隣り合う，数え上げ: https://atcoder.jp/contests/abc120/tasks/abc120_c

@@ -7,9 +7,11 @@
 - 素因数分解
     - [factoring.py](./factoring.py)
 - 深さ優先探索 (Depth first search)
-    - [dfs.py](./dfs.py)
+    - [graph_dfs.py](./graph_dfs.py)
 - 幅優先探索 (Breadth first search)
-    - [bfs.py](./bfs.py)
+    - [graph_bfs.py](./graph_bfs.py)
+    - [maze_dfs.py](./maze_dfs.py)
+- 1000000007で割ったときのあまり
 - [TODO] Union find
 - [TODO] ワーシャルフロイド法
 - [TODO] bit 全探索
