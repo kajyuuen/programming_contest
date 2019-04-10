@@ -1,4 +1,3 @@
-# https://atcoder.jp/contests/abc007/tasks/abc007_3
 from collections import deque
 
 def s_inpl(): return map(int,input().split())
@@ -27,6 +26,7 @@ def bfs(field, number_of_moves, sy, sx):
 
 
 if __name__ == "__main__":
+    # https://atcoder.jp/contests/abc007/tasks/abc007_3
     H, W = s_inpl()
     sy, sx = s_inpl()
     gy, gx = s_inpl()
