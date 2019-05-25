@@ -1,9 +1,5 @@
 INF = float("inf")
 
-def i_inpl(): return int(input())
-def s_inpl(): return map(int,input().split())
-def l_inpl(): return list(map(int, input().split()))
-
 def dfs(G, i, visited = []):
     if len(visited) == 0:
         visited.append(i)
@@ -14,6 +10,10 @@ def dfs(G, i, visited = []):
     return visited
 
 if __name__ == '__main__':
+    def i_inpl(): return int(input())
+    def s_inpl(): return map(int,input().split())
+    def l_inpl(): return list(map(int, input().split()))
+
     # 入力例
     # https://atcoder.jp/contests/abc016/tasks/abc016_3
     N, M = s_inpl()
