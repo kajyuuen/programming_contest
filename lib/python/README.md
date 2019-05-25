@@ -21,7 +21,7 @@
 - MOD計算
     - [mod.py](./mod.py)
 - Union find
-    - [union_find.py])(./union_find.py)
+    - [union_find.py](./union_find.py)
 - 最短経路問題
     - ベルマンフォード法: 単一始点最短経路問題（負の閉路がある場合）, O(E * V)
     - ダイクストラ法: 単一始点最短経路問題（負の閉路がない場合）, O(E * logV)
