@@ -10,6 +10,7 @@
     - https://atcoder.jp/contests/abc075/tasks/abc075_b
         - [abc075_b.py](./abc075_b.py)
     - BFS: https://atcoder.jp/contests/abc007/tasks/abc007_3
+    - dijkstra: https://atcoder.jp/contests/abc020/submissions/me
 - 最大公約数
     - https://atcoder.jp/contests/abc118/tasks/abc118_c
 - 二分木探索
@@ -47,9 +48,12 @@
             - DFS: [abc054_c.py](./abc054_c.py)
     - ワーシャルフロイド法
         - https://atcoder.jp/contests/abc016/tasks/abc016_3
+        - https://atcoder.jp/contests/abc022/tasks/abc022_c
 - いもす法
     - https://atcoder.jp/contests/abc035/tasks/abc035_c
     - https://atcoder.jp/contests/abc014/tasks/abc014_3
+- 累積和
+    - https://atcoder.jp/contests/tenka1-2019-beginner/tasks/tenka1_2019_c
 - mod
     - https://atcoder.jp/contests/abc103/tasks/abc103_c
     - 1000000007で割ったあまり
@@ -60,7 +64,9 @@
     - 三角形の公式 (0, 0), (a, b), (c, d): |a*d-b*c|/2
         - https://atcoder.jp/contests/abc002/tasks/abc002_3
 - その他
-    - シミュレーション: https://atcoder.jp/contests/abc027/tasks/abc027_c
+    - シミュレーション
+        - https://atcoder.jp/contests/abc027/tasks/abc027_c
+        - https://atcoder.jp/contests/abc031/tasks/abc031_c
     - 確率: https://atcoder.jp/contests/abc078/tasks/arc085_a
     - リバーシ: https://atcoder.jp/contests/abc047/tasks/arc063_a
     - https://atcoder.jp/contests/abc039/tasks/abc039_c

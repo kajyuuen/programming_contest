@@ -30,11 +30,43 @@ from itertools import combinations
 from bisect import bisect_left, bisect_right
 # import numpy as np
 
+def inside(y, x, H, W):
+    return 0 <= y < H and 0 <= x < W
+
+# 四方向: 右, 下, 左, 上
+dy = [0, -1, 0, 1]
+dx = [1, 0, -1, 0]
+
 def i_inpl(): return int(input())
 def s_inpl(): return map(int,input().split())
 def l_inpl(): return list(map(int, input().split()))
 INF = float("inf")
 
-# 四方向: 右, 下, 左, 上，右上, 右下, 左下, 左上
-dy = [0, -1, 0, 1]
-dx = [1, 0, -1, 0]
+#############################################
+
+H, W = map(int, input().split())
+f = []
+for _ in range(H):
+    S = input()
+    f.append(S)
+
+flag = True
+
+for y in range(H):
+    for x in range(W):
+        tmp = False
+        for i in range(4):
+            ny = y + dy[i]
+            nx = x + dx[i]
+            if inside(ny, nx, H, W) and f[ny][nx] == "#":
+                tmp = True
+                break
+        if not tmp:
+            flag = False
+            break
+
+if flag:
+    print("Yes")
+else:
+    print("No")
+

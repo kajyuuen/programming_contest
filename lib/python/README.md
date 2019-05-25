@@ -7,10 +7,17 @@
 - 素因数分解
     - [factoring.py](./factoring.py)
 - 深さ優先探索 (Depth first search)
+    - [adjacency_matrix_graph_dfs.py](./adjacency_matrix_graph_dfs.py)
+        - 隣接行列を用いたDFS
     - [graph_dfs.py](./graph_dfs.py)
-- 幅優先探索 (Breadth first search)
-    - [graph_bfs.py](./graph_bfs.py)
+        - Dictを用いたDFS
     - [maze_dfs.py](./maze_dfs.py)
+        - 迷路探索の場合のDFS
+- 幅優先探索 (Breadth first search)
+    - [adjacency_matrix_graph_bfs.py](./adjacency_matrix_graph_bfs.py)
+        - 隣接行列を用いたBFS
+    - [graph_bfs.py](./graph_bfs.py)
+         - Dictを用いたBFS
 - MOD計算
     - [mod.py](./mod.py)
 - TODO: Union find
