@@ -5,7 +5,7 @@ def s_inpl(): return map(int,input().split())
 def l_inpl(): return list(map(int, input().split()))
 
 # グラフGにおいてstartから各頂点に行くまでの最小コストを計算する
-def dijkstra(G, start):
+def dijkstra(start, G):
     # 初期化
     N = len(G)
 

@@ -54,6 +54,7 @@
     - https://atcoder.jp/contests/abc014/tasks/abc014_3
 - 累積和
     - https://atcoder.jp/contests/tenka1-2019-beginner/tasks/tenka1_2019_c
+    - https://atcoder.jp/contests/abc124/tasks/abc124_d
 - mod
     - https://atcoder.jp/contests/abc103/tasks/abc103_c
     - 1000000007で割ったあまり
