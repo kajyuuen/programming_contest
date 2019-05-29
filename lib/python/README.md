@@ -1,32 +1,50 @@
 # ライブラリ
 
+## グラフ
+
+### 最短経路問題
+
+- ベルマンフォード法: 単一始点最短経路問題（負の閉路がある場合）, O(E * V)
+    - [bellman_ford.py](./bellman_ford.py)
+- ダイクストラ法: 単一始点最短経路問題（負の閉路がない場合）, O(E * logV)
+    - [dijkstra.py](./dijkstra.py)
+    - TODO: 優先度付きキューを用いた実装
+- ワーシャルフロイド法: 全点対最短経路問題, O(V^3)
+    - [warshall_floyd.py](./warshall_floyd.py)
+
+### 全探索
+
+- 深さ優先探索 (Depth first search)
+    - [adjacency_matrix_graph_dfs.py](./adjacency_matrix_graph_dfs.py)
+        - 隣接行列を用いたDFS
+    - [graph_dfs.py](./graph_dfs.py)
+        - Dictを用いたDFS
+- 幅優先探索 (Breadth first search)
+    - [adjacency_matrix_graph_bfs.py](./adjacency_matrix_graph_bfs.py)
+        - 隣接行列を用いたBFS
+    - [graph_bfs.py](./graph_bfs.py)
+         - Dictを用いたBFS
+
+## 数学
+
+- 約数列挙
+    - [divisors.py](./divisors.py)
 - 最大公約数
     - [gcd.py](./gcd.py)
 - 最小公倍数
     - [lcm.py](./lcm.py)
 - 素因数分解
     - [factoring.py](./factoring.py)
-- 深さ優先探索 (Depth first search)
-    - [adjacency_matrix_graph_dfs.py](./adjacency_matrix_graph_dfs.py)
-        - 隣接行列を用いたDFS
-    - [graph_dfs.py](./graph_dfs.py)
-        - Dictを用いたDFS
-    - [maze_dfs.py](./maze_dfs.py)
-        - 迷路探索の場合のDFS
-- 幅優先探索 (Breadth first search)
-    - [adjacency_matrix_graph_bfs.py](./adjacency_matrix_graph_bfs.py)
-        - 隣接行列を用いたBFS
-    - [graph_bfs.py](./graph_bfs.py)
-         - Dictを用いたBFS
 - MOD計算
     - [mod.py](./mod.py)
+
+## データ構造
+
 - Union find
     - [union_find.py](./union_find.py)
-- 最短経路問題
-    - ベルマンフォード法: 単一始点最短経路問題（負の閉路がある場合）, O(E * V)
-        - [bellman_ford.py](./bellman_ford.py)
-    - ダイクストラ法: 単一始点最短経路問題（負の閉路がない場合）, O(E * logV)
-        - [dijkstra.py](./dijkstra.py)
-        - TODO: 優先度付きキューを用いた実装
-    - ワーシャルフロイド法: 全点対最短経路問題, O(V^3)
-        - [warshall_floyd.py](./warshall_floyd.py)
+
+## 競技プログラミング 典型
+
+- 深さ優先探索 (Depth first search)
+    - [maze_dfs.py](./maze_dfs.py)
+        - 迷路探索の場合のDFS

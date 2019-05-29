@@ -1,8 +1,15 @@
 # 問題
 
+- XOR
+    - https://atcoder.jp/contests/abc121/tasks/abc121_d
+        - MEMO: N ^ N+1 ^ ... ^ M = (0 ^ .. ^ N-1) ^ (0 ^ ... ^ M)
+        - MEMO: XOR問題は各行ごとに見るべき
 - 動的計画法
     - https://atcoder.jp/contests/abc011/tasks/abc011_3
     - https://atcoder.jp/contests/abc099/tasks/abc099_c
+    - 桁dp
+        - https://atcoder.jp/contests/abc117/tasks/
+            - [abc117_d.py](./abc117_d.py)
 - 組み合わせ
     - https://atcoder.jp/contests/abc034/tasks/abc034_c
     - https://atcoder.jp/contests/abc028/tasks/abc028_c

@@ -1,35 +1,34 @@
-class UnionFind:
-    
+class UnionFind(object):
+ 
     def __init__(self, N):
-        # 初期は全てが根
-        self.parent = [ i for i in range(N)]
+        self.parent = list(range(N))
         self.rank = [0] * N
-
-    # データxが属する木の根を求める
-    def root_find(self, x):
-        if self.parent[x] == x:
-            return x
-        else:
-            return self.root_find(self.parent[x])
-
-    # xとyの属する集合を合併
-    def unite(self, x, y):
-        x_root = self.root_find(x)
-        y_root = self.root_find(y)
-
-        if x_root == y_root:
-            return 
-
-        if self.rank[x_root] < self.rank[y_root]:
-            self.parent[x_root] = y_root
-        else:
-            self.parent[y_root] = x_root
-            if self.rank[x_root] == self.rank[y_root]:
-                self.rank[x_root] += 1
-    
-    # xとyが属する集合が一緒かどうか
+        self.size = [1] * N
+ 
+    def find(self, x):
+        if self.parent[x] != x:
+            self.parent[x] = self.find(self.parent[x])
+        return self.parent[x]
+ 
+    def union(self, x, y):
+        x = self.find(x)
+        y = self.find(y)
+        if x == y:
+            return
+ 
+        if self.rank[x] < self.rank[y]:
+            x, y = y, x
+ 
+        self.size[x] += self.size[y]
+        self.parent[y] = x
+        if self.rank[x] == self.rank[y]:
+            self.rank[x] += 1
+ 
     def same(self, x, y):
-        return self.root_find(x) == self.root_find(y)            
+        return self.find(x) == self.find(y)
+ 
+    def count(self, x):
+        return self.size[self.find(x)]
 
 
 if __name__ == "__main__":
@@ -47,6 +46,6 @@ if __name__ == "__main__":
             else:
                 answers.append("No")
         else:
-            uf.unite(a, b)
+            uf.union(a, b)
     
     print("\n".join(answers))
