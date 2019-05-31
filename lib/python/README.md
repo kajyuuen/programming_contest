@@ -25,6 +25,9 @@
 - [最小公倍数](./lcm.py)
 - [素因数分解](./factoring.py)
 - [MOD計算](./mod.py)
+- [エラトステネスの篩](./sieve_of_eratosthenes.py)
+- [組み合わせ](./combinations.py)
+- [順列](./permutations.py)
 
 ## データ構造
 
