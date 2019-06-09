@@ -1,23 +1,7 @@
-# https://qiita.com/_-_-_-_-_/items/34f933adc7be875e61d0
-# abcde	s=input()	s='abcde'
-# abcde	s=list(input())	s=['a', 'b', 'c', 'd', 'e']
-# 5(1つだけ)	a=int(input())	a=5
-# 1 2	| x,y = s_inpl()   |	x=1,y=2
-# 1 2 3 4 5 ... n 　	li = input().split()	li=['1','2','3',...,'n']
-# 1 2 3 4 5 ... n 　	li = inpl()	li=[1,2,3,4,5,...,n]
-# FFFTFTTFF 　	li = input().split('T')	li=['FFF', 'F', '', 'FF']
-
-# INPUT
-# 3
-# hoge
-# foo
-# bar
-# ANSWER
-# n=int(input())
-# string_list=[input() for i in range(n)]
-
 import math
 import copy
+from operator import mul
+from functools import reduce
 from collections import defaultdict
 from collections import Counter
 from collections import deque
@@ -38,35 +22,7 @@ dy = [0, -1, 0, 1]
 dx = [1, 0, -1, 0]
 
 def i_inpl(): return int(input())
-def s_inpl(): return map(int,input().split())
 def l_inpl(): return list(map(int, input().split()))
 INF = float("inf")
 
-#############################################
-
-H, W = map(int, input().split())
-f = []
-for _ in range(H):
-    S = input()
-    f.append(S)
-
-flag = True
-
-for y in range(H):
-    for x in range(W):
-        tmp = False
-        for i in range(4):
-            ny = y + dy[i]
-            nx = x + dx[i]
-            if inside(ny, nx, H, W) and f[ny][nx] == "#":
-                tmp = True
-                break
-        if not tmp:
-            flag = False
-            break
-
-if flag:
-    print("Yes")
-else:
-    print("No")
-
+########
