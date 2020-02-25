@@ -25,10 +25,18 @@ def i_inpl(): return int(input())
 def l_inpl(): return list(map(int, input().split()))
 INF = float("inf")
 
-########
+######
+# URL: https://atcoder.jp/contests/abc122/tasks/abc122_b
+######
 
 def main():
-    pass
+    S = input()
+    ans = 0
+    for begin in range(len(S)):
+        for end in range(begin, len(S)):
+            if sum([ "ACGT".count(s) for s in S[begin:end+1]]) == len(S[begin:end+1]):
+                ans = max(ans, len(S[begin:end+1]))
+    print(ans)
 
 if __name__ == "__main__":
-    pass
+    main()

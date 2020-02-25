@@ -25,10 +25,23 @@ def i_inpl(): return int(input())
 def l_inpl(): return list(map(int, input().split()))
 INF = float("inf")
 
-########
+######
+# URL: https://atcoder.jp/contests/abc106/tasks/abc106_b
+######
 
 def main():
-    pass
+    n = i_inpl()
+    ans = 0
+    for i in range(1, n+1):
+        if i % 2 == 0:
+            continue
+        tmp = 1
+        for j in range(2, n+1):
+            if i % j == 0:
+                tmp += 1
+        if tmp == 8:
+            ans += 1
+    print(ans)
 
 if __name__ == "__main__":
-    pass
+    main()

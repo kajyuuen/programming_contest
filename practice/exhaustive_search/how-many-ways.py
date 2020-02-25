@@ -25,10 +25,22 @@ def i_inpl(): return int(input())
 def l_inpl(): return list(map(int, input().split()))
 INF = float("inf")
 
-########
+######
+# URL: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_7_B&lang=ja
+######
 
 def main():
-    pass
+    while True:
+        n, x = l_inpl()
+        if n == 0 and x == 0:
+            return
+        ans = 0
+        for i in range(1, n+1):
+            for j in range(i+1, n+1):
+                for k in range(j+1, n+1):
+                    if (i + j + k) == x:
+                        ans += 1
+        print(ans)
 
 if __name__ == "__main__":
-    pass
+    main()
