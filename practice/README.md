@@ -3,9 +3,9 @@
 https://qiita.com/e869120/items/eb50fdaece12be418faa を解いていく。
 
 ## 全探索：全列挙 /exhaustive_search
-- [ ] 1　ITP1_7_B - How Many Ways?　基本問題です。
-- [ ] 2　AtCoder Beginner Contest 106 B - 105
-- [ ] 3　AtCoder Beginner Contest 122 B - ATCoder
+- [x] 1　ITP1_7_B - How Many Ways?　基本問題です。
+- [x] 2　AtCoder Beginner Contest 106 B - 105
+- [x] 3　AtCoder Beginner Contest 122 B - ATCoder
 - [ ] 4　パ研杯2019 C - カラオケ　これが解ければ全探索に慣れたと思って良いです。
 
 ## 全探索：工夫して通り数を減らす全列挙
