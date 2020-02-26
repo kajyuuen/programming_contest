@@ -9,8 +9,8 @@ https://qiita.com/e869120/items/eb50fdaece12be418faa を解いていく。
 - [ ] 4　パ研杯2019 C - カラオケ　これが解ければ全探索に慣れたと思って良いです。
 
 ## 全探索：工夫して通り数を減らす全列挙
-- [ ] 5　AtCoder Beginner Contest 095 C - Half and Half
-- [ ] 6　三井住友信託銀行プログラミングコンテスト 2019 D - Lucky PIN
+- [x] 5　AtCoder Beginner Contest 095 C - Half and Half
+- [x] 6　三井住友信託銀行プログラミングコンテスト 2019 D - Lucky PIN
 - [ ] 7　JOI 2007 本選 3 - 最古の遺跡　面白いです。
 - [ ] 8　Square869120Contest #6 B - AtCoder Markets　全探索すると無数に通り数があるように見えますが、ひとつ工夫すると現実的な通り数で全列挙できる問題です。
 - [ ] 9　JOI 2008 予選 4 - 星座探し
