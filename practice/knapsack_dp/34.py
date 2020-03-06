@@ -1,7 +1,4 @@
 import math
-import sys
-sys.setrecursionlimit(100000)
-
 import copy
 from operator import mul
 from functools import reduce
@@ -24,16 +21,25 @@ def inside(y, x, H, W):
 dy = [0, -1, 0, 1]
 dx = [1, 0, -1, 0]
 
-# 八方向
-dxy = [[-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1], [-1, -1]]
-
 def i_inpl(): return int(input())
 def l_inpl(): return list(map(int, input().split()))
 INF = float("inf")
-########
+
+######
+# URL: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A&lang=ja
+######
+
 
 def main():
-    pass
+    n = i_inpl()
+    dp = [ -INF for _ in range(50) ]
+    dp[0] = 1
+    dp[1] = 1
+
+    for i in range(2, n+1):
+        dp[i] = max(dp[i], dp[i-1] + dp[i-2])
+    
+    print(dp[n])
 
 if __name__ == "__main__":
-    pass
+    main()

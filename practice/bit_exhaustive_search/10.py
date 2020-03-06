@@ -1,7 +1,4 @@
 import math
-import sys
-sys.setrecursionlimit(100000)
-
 import copy
 from operator import mul
 from functools import reduce
@@ -14,7 +11,7 @@ from itertools import product
 from itertools import permutations
 # 組み合わせ {}_len(seq) C_n: combinations(seq, n)
 from itertools import combinations
-from bisect import bisect_left #, bisect_right
+from bisect import bisect_left, bisect_right
 # import numpy as np
 
 def inside(y, x, H, W):
@@ -24,16 +21,34 @@ def inside(y, x, H, W):
 dy = [0, -1, 0, 1]
 dx = [1, 0, -1, 0]
 
-# 八方向
-dxy = [[-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1], [-1, -1]]
-
 def i_inpl(): return int(input())
 def l_inpl(): return list(map(int, input().split()))
 INF = float("inf")
-########
+
+######
+# URL: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A&lang=ja
+######
 
 def main():
-    pass
+    N = i_inpl()
+    A = [ int(i) for i in input().split(" ")]
+    q = i_inpl()
+    m = [ int(i) for i in input().split(" ")]
+
+    # bit演算
+    all_num = set()
+    for i in range(1, 2**N):
+        tmp = []
+        for j in range(N):
+            if ((i>>j) & 1):
+                tmp.append(A[j])
+        all_num.add(sum(tmp))
+
+    for m_i in m:
+        if m_i in all_num:
+            print("yes")
+        else:
+            print("no")
 
 if __name__ == "__main__":
-    pass
+    main()

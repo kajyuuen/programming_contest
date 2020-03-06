@@ -1,10 +1,10 @@
 from collections import defaultdict
 
-def dfs(graph, node_start, visited):
-    if node_start in visited:
+def dfs(graph, node, visited):
+    if node in visited:
         return visited
-    visited.append(node_start)
-    for node_end in graph[node_start]:
+    visited.append(node)
+    for node_end in graph[node]:
         dfs(graph, node_end, visited)
     return visited
 
